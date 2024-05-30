@@ -5,31 +5,38 @@ The report includes metadata such as examiner details, hash values for integrity
 interface for adjusting timezone and daylight saving time settings.
 
 Features
-Forensic Metadata: Includes examiner name, case number, source directory, and file hashes (SHA-256 and SHA-1) for integrity verification.
-Media Handling: Automatically locates and displays media files (images and videos) associated with messages.
-Timezone and DST Adjustment: User-friendly form to adjust timestamps according to different timezones and daylight saving time.
-Message Filtering: Option to filter messages by sender and recipient.
-Forensic Soundness: Ensures data integrity and accurate reporting.
-Installation
-Clone the repository:
 
+Forensic Metadata:
+Includes examiner name, case number, source directory, and file hashes (SHA-256 and SHA-1) for integrity verification.
+Media Handling:
+Automatically locates and displays media files (images and videos) associated with messages.
+Timezone and DST Adjustment:
+User-friendly form to adjust timestamps according to different timezones and daylight saving time.
+Message Filtering:
+Option to filter messages by sender and recipient.
+Forensic Soundness:
+Ensures data integrity and accurate reporting.
 
 Ensure you have installed pytz
 pip install pytz
 
 Usage
+
 Prepare your CSV file:
+
 *preformatted chat.csv received from SnapChat.
 
-Ensure your CSV file contains the following columns:
-id,from,to,body,href,media_id,saved,timestamp
+Ensure your CSV file contains the following columns: 
+
+   id,from,to,body,href,media_id,saved,timestamp
 
 
 
 Run the script:
-python unsnap.py [options]
-Options:
 
+python unsnap.py [options]
+
+Options:
 filename: The path to the CSV file (required).
 --from: Filter by the sender (optional).
 --to: Filter by the recipient (optional).
