@@ -1,4 +1,5 @@
 SnapChat Return Forensic Report Generator
+
 This Python script generates a forensically sound HTML report from a CSV file containing SnapChat return data.
 The report includes metadata such as examiner details, hash values for integrity verification, and a user-friendly
 interface for adjusting timezone and daylight saving time settings.
